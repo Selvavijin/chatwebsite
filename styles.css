@@ -1,0 +1,381 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Box sizing for easier layout */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    height: 100vh;
+}
+
+#left_side {
+    width: 25%;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+}
+
+#top_header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#new_chat_button, #close_sidebar_button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#close_sidebar_button {
+    width: 20%;
+    display: none;
+}
+
+#list_of_chats {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.single_chat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat_icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.chat_title {
+    flex-grow: 1;
+}
+
+#profile {
+    padding: 10px;
+}
+
+#upgrade_plus, #profile_details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.account_icon, .user_avatar, .more_options {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#upgrade_text, .user_name {
+    flex-grow: 1;
+}
+
+.new_label {
+    font-size: 14px;
+    color: red;
+}
+
+#right_side {
+    width: 75%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+}
+
+#top_header_right {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top_header_right button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#middle_section {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #222;
+    overflow-y: auto;
+}
+
+#chat_text_output_pane {
+    /* Add styles for the chat text output pane here */
+}
+
+#bottom_section {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#search_text_box {
+    flex-grow: 1;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#send_icon {
+    background-color: #444;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#footer {
+    background-color: #222;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#help_icon {
+    background-color: #222;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effects for buttons and chat items */
+button:hover, .single_chat:hover {
+    background-color: #555;
+}
+
+/* Styling for chat text output pane can be added here */
+
+/* Additional CSS for other specific elements can be added as needed */
+/* Left Side Styles */
+#left_side {
+    width: 25%;
+    background-color: #333;
+    /* Add other left-side styles */
+}
+
+/* Right Side Styles */
+#right_side {
+    width: 75%;
+    background-color: #444;
+    /* Add other right-side styles */
+}
+
+/* Left Side Styles */
+#left_side {
+    width: 25%;
+    background-color: #333;
+    /* Other left-side styles */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#top_header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#new_chat_button, #close_sidebar_button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#close_sidebar_button {
+    width: 20%;
+    display: none;
+}
+
+#list_of_chats {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.single_chat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat_icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.chat_title {
+    flex-grow: 1;
+}
+
+#profile {
+    padding: 10px;
+}
+
+#upgrade_plus, #profile_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Other styles for upgrade_plus and profile_details */
+
+/* Right Side Styles */
+#right_side {
+    width: 75%;
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+}
+
+#top_header_right {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top_header_right button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Other styles for middle_section, bottom_section, and footer */
+
+/* ... (your existing CSS styles) ... */
+
+#date_options {
+    padding: 10px;
+    text-align: left;
+}
+
+#date_options button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#date_options button:hover {
+    background-color: #555;
+}
+
+/* ... (your existing CSS styles) ... */
+/* ... (your existing CSS styles) ... */
+
+#right_side_header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#share_button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: right;
+}
+
+#share_button:hover {
+    background-color: #555;
+}
+
+/* ... (your existing CSS styles) ... */
+/* ... (your existing CSS styles) ... */
+
+#right_side_header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#share_button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto; /* Align the button to the right */
+}
+
+#share_button:hover {
+    background-color: #555;
+}
+
+/* ... (your existing CSS styles) ... */

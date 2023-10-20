@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Chat App</title>
+</head>
+<body>
+    <div id="left_side">
+        <div id="top_header">
+            <button id="new_chat_button">
+                New Chat
+            </button>
+            <button id="close_sidebar_button">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="date_options">
+            <button id="today_button">Today</button> <br />
+            <button id="prev_7_days_button">Previous 7 days</button>
+            <button id="prev_30_days_button">Previous 30 days</button>
+        </div>
+        <div id="list_of_chats">
+            <!-- Chats will be dynamically added here -->
+        </div>
+        <div id="profile">
+            <div id="upgrade_plus">
+                <i class="fas fa-user account_icon"></i>
+                <div id="upgrade_text">Upgrade to Plus</div>
+                <span class="new_label">New</span>
+            </div>
+            <div id="profile_details">
+                <i class="fas fa-user user_avatar"></i>
+                <div class="user_name">John Doe</div>
+                <i class="fas fa-ellipsis-h more_options"></i>
+            </div>
+        </div>
+    </div>
+    <div id="right_side">
+        <div id="top_header_right">
+            <button id="gpt35_button">
+                <i class="fas fa-robot"></i>
+                <span>GPT-3.5</span>
+            </button>
+            <button id="gpt4_button">
+                <i class="fas fa-robot"></i>
+                <span>GPT-4</span>
+                <i class="fas fa-lock"></i>
+            </button>
+            <button id="share_button">
+                <i class="fas fa-share"></i>
+            </button>
+        </div>
+        <div id="middle_section">
+            <div id="chat_text_output_pane">
+                <!-- Chat messages will go here -->
+            </div>
+        </div>
+        <div id="bottom_section">
+            <input type="text" id="search_text_box" placeholder="Search...">
+            <button id="send_icon">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <div id="footer">
+            <span>ChatGPT Chat App</span>
+            <button id="help_icon">
+                <i class="fas fa-question-circle"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
